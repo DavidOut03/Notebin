@@ -1,0 +1,25 @@
+<%- include("parts/header") %>
+
+   
+        <div class="topnav">
+            <div class="topnav-right">
+              <a class="btn" href="/new">New</a>
+              <a class="btn" href="/raw/<%= uuid %>">Raw</a>
+            </div>
+          </div>
+
+          <div class="currentLine">
+
+            <ul class="lines">
+              <% content.split("\n").forEach(function(line, index) { %>
+          
+                <li> <pre>  <code> <%= index + 1 %> <%= line %> </code>  </pre> </li> 
+               <% }) %>
+            </ul>
+
+            
+          </div>
+  
+ 
+
+<%- include("parts/footer") %>

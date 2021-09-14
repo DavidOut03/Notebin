@@ -1,0 +1,29 @@
+<%- include("parts/header") %>
+
+
+
+
+
+      <form action="/submit" method="POST">
+
+        <div class="topnav">
+            <div class="topnav-right">
+              <a class="btn" href="/new">New</a>
+              <button type="submit" class="btn">Save</button>
+            </div>
+          </div>
+
+          <div class="currentLine" contenteditable="true">
+            <p class="arrow"> > </p>  <textarea name="note" id="code"></textarea>
+          </div>
+       
+      </form>
+
+
+      <script>
+        autosize(document.querySelector("textarea"));
+      </script>
+  
+ 
+
+<%- include("parts/footer") %>
